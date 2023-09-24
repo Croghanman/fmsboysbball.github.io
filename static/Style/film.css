@@ -1,0 +1,115 @@
+body { 
+background-image: url('../images/gym.jpg');
+background-size:100%;
+background-attachment:  fixed;
+
+}
+
+
+h4 {
+    padding-left: 50px;
+    font-size: 30px;
+    font-family:"Helvetica";
+    color: white;
+    text-decoration: underline;
+}
+
+
+#titleheader {
+    text-align: left;
+    line-height: 80px;
+    padding-left: 50px;
+    font-size: 40px;
+    color:white;
+    text-decoration: underline;
+    align-items: center;
+    background-color:rgb(88, 15, 156);
+    opacity: 85%;
+    
+}
+
+#filmstrip {
+    height: 75px;
+    width: 75px;
+    line-height: 80px;   
+}
+   hr{
+    border: 1px solid rgb(115, 36, 241);
+    width: 1200px;
+    margin-left:50px; 
+    margin-top:0px;
+}
+
+.videodiv{
+    width: 80%;
+
+}
+
+
+th{
+    background-color: indigo;
+    color:white;
+    opacity:65%;
+    border-radius: 5px;
+}
+td{
+    color:white;
+    text-align: center;
+}
+.namedata{
+    text-align: left;
+}
+.navspan{
+    padding-left:30px ; 
+    border-left:5px ;
+}
+nav {
+    color:rgb(255, 255, 255);
+    border-color: rgb(109, 107, 107); 
+}
+ul{
+    list-style-type: none;
+}
+
+li:hover{
+    color: yellowgreen;
+}
+
+#navbar{
+    display: inline-block;
+}
+nav {
+    height: 30px;
+}
+li {
+    display:inline-block;
+    padding-left: 25px;
+    font-size: 25px;
+    font-family: Helvetica;
+}
+#filmnav{
+    text-decoration: underline;
+    color: rgb(241, 240, 171);
+     
+}
+
+.stattable{
+    background-color: black;
+    display:inline-block;
+    margin-bottom: 140px;
+    
+   
+}
+
+.videobox{
+    width:600px;
+    height:350;
+    padding-left: 50px;
+    position:relative;  
+    margin-right:70px;
+}
+.statblock{
+    display:inline-flex;
+    max-height:300px;   
+}
+

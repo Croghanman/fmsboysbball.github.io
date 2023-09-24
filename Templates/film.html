@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"type="text/css" href="{{url_for('static',filename='Style/film.css')}}">
+        <title>FMS Stats</title>
+    </head>
+
+    <body>
+        <nav>
+            <ul id="navbar">
+                <li id="teamstatsnav">Team Stats</li>
+                <li id="filmnav">Film</li>
+                <li id="schedulenav">Schedule</li>
+            </ul>
+        </nav>
+       
+        <div class="mainheader" >
+            <h1 id="titleheader">Team Film <span><img src="{{ url_for('static', filename='images/filmstrip.png') }}" id="filmstrip"></span></h1>
+            
+            <br>
+            <br>
+            <br>
+        </div>
+        
+      
+        <section id="@donnell" class="videosections"> <!---------------------------------------------------------------------------------------------------------------@DONNELL-->
+            <br>
+            <h4> @Donnell</h4> 
+            <div class="videodiv">
+                <video class="videobox" controls="" >
+                    <source src="{{ url_for('static', filename='videos/Donnell2023.mp4') }}" type="video/mp4" >
+                </video>
+                
+                <div class="stattable">
+                    <table>
+                        <tr class="tableheader">
+                            <th>Player</th>
+                        </tr>
+                        {%for i in atdonnellname%} <!---------------------------Name-->
+                            <tr>
+                                <td class="namedata">{{i}}</td>
+                            </tr>
+                        {%endfor%}   
+                    </table>
+                </div>
+                <div class="stattable">
+                    <table>
+                        <tr class="tableheader">
+                            <th>Rebounds</th>
+                        </tr>
+                        {%for i in atdonnellrebound%} <!-------------------------rebound-->
+                            <tr>
+                                <td>{{i}}</td>
+                            </tr>
+                        {%endfor%}   
+                    </table>
+                </div>
+                <div class="stattable">
+                    <table>
+                        <tr class="tableheader">
+                            <th>Steals</th>
+                        </tr>
+                        {%for i in atdonnellsteal%} <!-----------------------------steal-->
+                            <tr>
+                                <td>{{i}}</td>
+                            </tr>
+                        {%endfor%}   
+                    </table>
+                </div>
+                <div class="stattable">
+                    <table>
+                        <tr class="tableheader">
+                            <th>Assists</th>
+                        </tr>
+                        {%for i in atdonnellassist%} <!----------------------------assist-->
+                            <tr>
+                                <td>{{i}}</td>
+                            </tr>
+                        {%endfor%}   
+                    </table>
+                </div>
+                <div class="stattable">
+                    <table>
+                        <tr class="tableheader">
+                            <th>Points</th>
+                        </tr>
+                        {%for i in atdonnellpts%} <!----------------------------pts-->
+                            <tr>
+                                <td>{{i}}</td>
+                            </tr>
+                        {%endfor%}   
+                    </table>
+                </div>
+                <div class="stattable">
+                    <table>
+                        <tr class="tableheader">
+                            <th>Make/Attempt</th>
+                        </tr>
+                        {%for i in atdonnellattempts%} <!----------------------------attempts-->
+                            <tr>
+                                <td>{{i}}</td>
+                            </tr>
+                        {%endfor%}   
+                    </table>
+                </div>
+                <div class="stattable">
+                    <table>
+                        <tr class="tableheader">
+                            <th>Turnovers</th>
+                        </tr>
+                        {%for i in atdonnellturnover%} <!----------------------------turnover-->
+                            <tr>
+                                <td>{{i}}</td>
+                            </tr>
+                        {%endfor%}   
+                    </table>
+                </div>     
+            </div>
+            <hr>
+        </section>
+        <section id="@donnell" class="videosections"> <!---------------------------------------------------------------------------------------------------------------@WASHINGTON-->
+            <br>
+            <h4> @Washington</h4> 
+            <div class="videodiv">
+                <video class="videobox" controls="" >
+                    <source src="{{ url_for('static', filename='videos/wash.mp4') }}" type="video/mp4" >
+                </video>
+                
+                <div class="stattable">
+                    <table>
+                        <tr class="tableheader">
+                            <th>Player</th>
+                        </tr>
+                        {%for i in atwashingtonname%} <!---------------------------Name-->
+                            <tr>
+                                <td class="namedata">{{i}}</td>
+                            </tr>
+                        {%endfor%}   
+                    </table>
+                </div>
+                <div class="stattable">
+                    <table>
+                        <tr class="tableheader">
+                            <th>Rebounds</th>
+                        </tr>
+                        {%for i in atwashingtonrebound%} <!-------------------------rebound-->
+                            <tr>
+                                <td>{{i}}</td>
+                            </tr>
+                        {%endfor%}   
+                    </table>
+                </div>
+                <div class="stattable">
+                    <table>
+                        <tr class="tableheader">
+                            <th>Steals</th>
+                        </tr>
+                        {%for i in atwashingtonsteal%} <!-----------------------------steal-->
+                            <tr>
+                                <td>{{i}}</td>
+                            </tr>
+                        {%endfor%}   
+                    </table>
+                </div>
+                <div class="stattable">
+                    <table>
+                        <tr class="tableheader">
+                            <th>Assists</th>
+                        </tr>
+                        {%for i in atwashingtonassist%} <!----------------------------assist-->
+                            <tr>
+                                <td>{{i}}</td>
+                            </tr>
+                        {%endfor%}   
+                    </table>
+                </div>
+                <div class="stattable">
+                    <table>
+                        <tr class="tableheader">
+                            <th>Points</th>
+                        </tr>
+                        {%for i in atwashingtonpts%} <!----------------------------pts-->
+                            <tr>
+                                <td>{{i}}</td>
+                            </tr>
+                        {%endfor%}   
+                    </table>
+                </div>
+                <div class="stattable">
+                    <table>
+                        <tr class="tableheader">
+                            <th>Make/Attempt</th>
+                        </tr>
+                        {%for i in atwashingtonattempts%} <!----------------------------attempts-->
+                            <tr>
+                                <td>{{i}}</td>
+                            </tr>
+                        {%endfor%}   
+                    </table>
+                </div> 
+                <div class="stattable">
+                    <table>
+                        <tr class="tableheader">
+                            <th>Turnovers</th>
+                        </tr>
+                        {%for i in atwashingtonturnover%} <!----------------------------turnover-->
+                            <tr>
+                                <td>{{i}}</td>
+                            </tr>
+                        {%endfor%}   
+                    </table>
+                </div>    
+            </div>
+            <hr>
+        </section>
+</body>
+>>>>>>> 8146569aa39b576c3f67d251c373da07e12cbad6
+</html>
